@@ -51,7 +51,7 @@ const safeArray = (v) => (Array.isArray(v) ? v : []);
 const safeObjectEntries = (v) => (v && typeof v === 'object' && !Array.isArray(v) ? Object.entries(v) : []);
 
 export default async function UniversalResultPage({ params }) {
-  const id = await params.id;
+  const { id } = await params;
   const result = await getResultData(id);
 
 

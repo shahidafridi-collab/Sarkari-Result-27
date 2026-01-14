@@ -141,7 +141,7 @@ export default async function JobDetail({ params }) {
       />
       <HowToSchema
         title="Selection Process"
-        steps={selectionProcessItems}
+        steps={job.selectionProcess}
       />
       
       <div className="min-h-screen bg-gray-50 font-sans">

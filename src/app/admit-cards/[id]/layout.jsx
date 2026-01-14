@@ -1,5 +1,5 @@
 export async function generateMetadata({ params }) {
-  const id = await params.id;
+  const { id } = await params;
   const res = await fetch(
     `https://gist.githubusercontent.com/shahidafridi-collab/d6610e1b9fb8e2617c2999d1edc0851c/raw/gistfile1.txt`,{
     next: { revalidate: 3600 },

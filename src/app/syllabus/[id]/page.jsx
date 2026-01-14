@@ -15,7 +15,7 @@ async function getData(id) {
 
 
 export default async function SyllabusDetail({ params }) {
-  const id = await params.id;
+  const { id } = await params;
   const syllabus =  await getData(id);
 
   if (!syllabus) {

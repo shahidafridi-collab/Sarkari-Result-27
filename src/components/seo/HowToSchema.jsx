@@ -1,4 +1,11 @@
-export default function HowToSchema({ title, steps }) {
+import Script from "next/script";
+
+export default function HowToSchema({ title, steps = [] }) {
+  // ✅ Ensure steps is an array (not a Promise)
+  if (!Array.isArray(steps) || steps.length === 0) {
+    return null;
+  }
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "HowTo",
@@ -6,14 +13,18 @@ export default function HowToSchema({ title, steps }) {
     step: steps.map((step, index) => ({
       "@type": "HowToStep",
       position: index + 1,
-      name: step,
-    })),
+      name: step
+    }))
   };
 
   return (
-    <script
+    <Script
+      id="howto-schema"
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      strategy="afterInteractive"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(schema)
+      }}
     />
   );
 }

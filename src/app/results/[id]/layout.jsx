@@ -1,5 +1,5 @@
 export async function generateMetadata({ params }) {
-  const id = await params.id;
+ const { id } = await params;
     const res = await fetch('https://gist.githubusercontent.com/shahidafridi-collab/9fb5f95e93ed95eba1959d1a18ac6bf7/raw/combine_result');
 
   const result = await res.json();
