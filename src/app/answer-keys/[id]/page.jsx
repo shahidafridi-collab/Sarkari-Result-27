@@ -146,8 +146,8 @@ export default async function JobDetail({ params }) {
         ]}
       />
       <HowToSchema
-        title="Selection Process"
-        steps={job.selectionProcess}
+        title="How to Complete Counselling Process 2026"
+        process={process}
       />
       <div className="min-h-screen bg-gray-50 font-sans">
         <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">

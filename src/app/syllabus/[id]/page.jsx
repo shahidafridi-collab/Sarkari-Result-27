@@ -16,7 +16,7 @@ async function getData(id) {
 
 export default async function SyllabusDetail({ params }) {
   const { id } = await params;
-  const syllabus =  await getData(id);
+  const syllabus = await getData(id);
 
   if (!syllabus) {
     return (
@@ -64,13 +64,19 @@ export default async function SyllabusDetail({ params }) {
                   {syllabus.exam}
                 </p>
               </div>
-              <a
-                href="/pdfs/sample-syllabus.pdf"
-                className="inline-flex items-center bg-indigo-600 text-white px-4 py-2 rounded-lg"
-              >
-                <Download className="h-4 w-4 mr-2" />
-                Download PDF
-              </a>
+              {syllabus.link &&
+                <a
+                  href={syllabus.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Download syllabus PDF"
+                  className="inline-flex items-center bg-indigo-600 text-white px-4 py-2 rounded-lg"
+                >
+                  <Download className="h-4 w-4 mr-2" />
+                  Download PDF
+                </a>
+              }
+
             </div>
           </div>
 

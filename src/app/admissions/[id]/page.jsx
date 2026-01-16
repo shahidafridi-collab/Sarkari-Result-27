@@ -79,10 +79,9 @@ export default async function AdmissionDetail({ params }) {
         ]}
       />
       <HowToSchema
-        title="Counselling Process"
-        steps={admission.process}
+        title="How to Complete Counselling Process 2026"
+        process={process}
       />
-
 
       <div className="min-h-screen bg-gray-50 py-8">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -85,8 +85,8 @@ export default async function UniversalResultPage({ params }) {
         ]}
       />
       <HowToSchema
-        title="How to Check / Steps"
-        steps={result.checkSteps}
+        title="How to Complete Counselling Process 2026"
+        process={process}
       />
       <div className="min-h-screen bg-gray-50 py-8 px-4 sm:px-6 lg:px-8 font-sans">
         <div className="max-w-6xl mx-auto">

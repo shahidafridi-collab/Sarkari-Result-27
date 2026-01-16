@@ -1,8 +1,7 @@
 import Script from "next/script";
 
-export default function HowToSchema({ title, steps = [] }) {
-  // ✅ Ensure steps is an array (not a Promise)
-  if (!Array.isArray(steps) || steps.length === 0) {
+export default function HowToSchema({ title, process = [] }) {
+  if (!Array.isArray(process) || process.length === 0) {
     return null;
   }
 
@@ -10,10 +9,12 @@ export default function HowToSchema({ title, steps = [] }) {
     "@context": "https://schema.org",
     "@type": "HowTo",
     name: title,
-    step: steps.map((step, index) => ({
+    totalTime: "PT15M",
+    step: process.map((item, index) => ({
       "@type": "HowToStep",
       position: index + 1,
-      name: step
+      name: `Step ${index + 1}`,
+      text: item
     }))
   };
 
@@ -21,7 +22,7 @@ export default function HowToSchema({ title, steps = [] }) {
     <Script
       id="howto-schema"
       type="application/ld+json"
-      strategy="afterInteractive"
+      strategy="beforeInteractive"
       dangerouslySetInnerHTML={{
         __html: JSON.stringify(schema)
       }}
