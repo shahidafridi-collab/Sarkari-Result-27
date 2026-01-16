@@ -2,7 +2,7 @@ import Link from "next/link";
 import Script from "next/script";
 import BreadcrumbSchema from "../components/seo/BreadcrumbSchema";
 import { Calendar, FileText, CreditCard, Key, BookOpen, GraduationCap, TrendingUp, Clock } from 'lucide-react';
-// import homePage from "@/data/homePage";
+
 
 
 export const metadata = {
