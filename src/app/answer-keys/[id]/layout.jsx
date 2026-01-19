@@ -1,3 +1,6 @@
+export const runtime = "nodejs";
+
+
 export async function generateMetadata({ params }) {
   const { id } = await params;
   const res = await fetch('https://gist.githubusercontent.com/shahidafridi-collab/3d4fa23aadd9be02be79a58e46009126/raw/gistfile1.txt', {next: {revalidate:3600}});

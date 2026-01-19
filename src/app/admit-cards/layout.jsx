@@ -1,3 +1,6 @@
+export const runtime = "nodejs";
+
+
 export const metadata = {
   title: "Admit Card 2026 – SSC, UPSC, Railway Exam Admit Card | sarkariresult27.com",
   description:

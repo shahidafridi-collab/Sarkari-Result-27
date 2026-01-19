@@ -1,3 +1,6 @@
+export const runtime = "nodejs";
+
+
 export const metadata = {
   title: "Government Exam Syllabus 2026 | SSC, UPSC, Railway – Sarkari Result",
   description:

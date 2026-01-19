@@ -1,3 +1,8 @@
+export const runtime = "nodejs";
+
+
+
+
 export async function generateMetadata({ params }) {
   const { id } = await params;
   const res = await fetch(

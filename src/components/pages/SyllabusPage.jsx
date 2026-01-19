@@ -1,3 +1,5 @@
+export const runtime = 'nodejs';
+
 import Link from "next/link";
 import { BookOpen, Eye } from "lucide-react";
 

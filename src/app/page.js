@@ -1,3 +1,5 @@
+export const runtime = "nodejs";
+
 import Link from "next/link";
 import Script from "next/script";
 import BreadcrumbSchema from "../components/seo/BreadcrumbSchema";

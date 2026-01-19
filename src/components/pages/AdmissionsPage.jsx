@@ -1,3 +1,5 @@
+export const runtime = 'nodejs';
+
 import React from 'react';
 import Link from 'next/link';
 import { GraduationCap, Eye } from 'lucide-react';

@@ -1,3 +1,5 @@
+export const runtime = "nodejs";
+
 import Link from 'next/link';
 import { Key, Eye } from 'lucide-react';
 // import { answerKeyListings } from '../../data/answerkeyListings';

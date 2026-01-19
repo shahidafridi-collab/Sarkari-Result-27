@@ -1,3 +1,6 @@
+export const runtime = "nodejs";
+
+
 export async function GET() {
   const BASE_URL = "https://www.sarkariresult27.com";
 

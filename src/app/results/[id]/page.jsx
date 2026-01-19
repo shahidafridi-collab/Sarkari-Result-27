@@ -1,5 +1,5 @@
 
-
+export const runtime = "nodejs";
 async function getResultData(id) {
   const res = await fetch('https://gist.githubusercontent.com/shahidafridi-collab/9fb5f95e93ed95eba1959d1a18ac6bf7/raw/combine_result', { next: { revalidate: 3600, } });
   if (!res.ok) {
