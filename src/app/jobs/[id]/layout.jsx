@@ -10,13 +10,13 @@ export async function generateMetadata({ params }) {
 
   return {
     title: specificjobs.title,
-    description: specificjobs.description,
+    description: specificjobs.metaD,
     alternates: {
       canonical: `https://www.sarkariresult27.com/jobs/${id}`,
     },
     openGraph: {
       title: specificjobs.title,
-      description: specificjobs.description,
+      description: specificjobs.metaD,
       url: `https://www.sarkariresult27.com/jobs/${id}`,
     },
   };

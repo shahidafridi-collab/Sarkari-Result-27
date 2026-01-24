@@ -8,14 +8,14 @@ import { Calendar, FileText, CreditCard, Key, BookOpen, GraduationCap, TrendingU
 
 
 export const metadata = {
-  title: "Sarkari Result 27: Latest Govt Jobs, Results, Admit Card",
+  title: "Sarkari Result: Latest Govt Jobs, Results, Admit Card",
   description:
-    "Sarkari Result 2026 – Get latest govt jobs, results, admit card, syllabus, answer key and exam notifications. Trusted portal for all Sarkari updates.",
+    "Sarkari Result – Get latest govt jobs, results, admit card, syllabus, answer key and exam notifications. Trusted portal for all Sarkari updates.",
   keywords: [
-    "Sarkari Result 27",
+    "Sarkari Result",
     "Government Job",
     "Latest Sarkari Job",
-    "sarkariresult27",
+    "sarkariresult",
     "Ssc cgl",
     "Railway banking",
     "bscc",
@@ -26,7 +26,7 @@ export const metadata = {
     canonical: "https://www.sarkariresult27.com",
   },
   openGraph: {
-    title: "Sarkari Result 2026: Govt Jobs, Results, Admit Card",
+    title: "Sarkari Result: Govt Jobs, Results, Admit Card",
     description:
       "Latest Sarkari Result 2026 updates for govt jobs, exam results, admit card, syllabus and answer key.",
     url: "https://sarkariresult27.com",
@@ -261,7 +261,7 @@ export default async function Home() {
           <p className="text-gray-700 text-lg leading-relaxed mb-6 text-center">
             Stay updated with the latest Sarkari Jobs, Test Results, Online and Offline Forms,
             Admit Cards, Syllabus, Admissions, Answer Keys, Scholarships, Notifications,
-            <strong className="text-blue-600"> SarkariResult27</strong> and more. For real-time updates on Government Exams,
+            <strong className="text-blue-600"> Sarkari Result</strong> and more. For real-time updates on Government Exams,
             Sarkari Results, India Board Results (including UP Board and Bihar Board 10th and 12th Results),
             and the newest job openings, visit <strong className="text-blue-600">sarkariresult27.com</strong> regularly.
             Never miss out on important notifications, exam dates, and career opportunities with Sarkari Result.
@@ -272,11 +272,11 @@ export default async function Home() {
             <section className="bg-blue-50 rounded-xl p-5">
               <h2 className="text-2xl font-bold text-blue-900 mb-4 flex items-center">
                 <span className="bg-blue-900 text-white p-2 rounded mr-3">📢</span>
-                Sarkari Results 2026 - Latest Government Job Updates
+                Sarkari Results - Latest Government Job Updates
               </h2>
               <p className="text-gray-700 mb-4">
-                <strong className="text-blue-700">SarkariResult27</strong> is a popular website in India that provides information on
-                government job exams, Sarkari Result 2026, and related updates. It is a well-known platform
+                <strong className="text-blue-700">Sarkari Result</strong> is a popular website in India that provides information on
+                government job exams, Sarkari Result, and related updates. It is a well-known platform
                 used by many job seekers to find details about government job openings, admit cards, exam dates,
                 and results on <strong>sarkariresult27.com</strong>.
               </p>
@@ -286,7 +286,7 @@ export default async function Home() {
             <section className="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-5">
               <h2 className="text-2xl font-bold text-green-900 mb-4 flex items-center">
                 <span className="bg-green-900 text-white p-2 rounded mr-3">💼</span>
-                Latest Sarkari Jobs on SarkariResult27 2026
+                Latest Sarkari Jobs on Sarkari Result
               </h2>
               <p className="text-gray-700 mb-4">
                 All candidates searching for Sarkari Jobs can find almost all State & Central Government Jobs
@@ -328,7 +328,7 @@ export default async function Home() {
               <div className="space-y-6">
                 {[
                   {
-                    q: "What is Sarkari Result 2026?",
+                    q: "What is Sarkari Result?",
                     a: "Sarkari Result is a free job alert website, where you can find the latest Government Jobs notifications, Sarkari Result, Admit Card, Answer Key, Cut off Marks, Exam Date, Sarkari Yojana and other updates on sarkariresult27.com."
                   },
                   {
@@ -395,7 +395,7 @@ export default async function Home() {
               "mainEntity": [
                 {
                   "@type": "Question",
-                  "name": "What is Sarkari Result 2026?",
+                  "name": "What is Sarkari Result?",
                   "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "Sarkari Result is a free job alert website, where you can find the latest Government Jobs notifications, Sarkari Result, Admit Card, Answer Key, Cut off Marks, Exam Date, Sarkari Yojana and other updates on sarkariresult27.com."

@@ -1,7 +1,5 @@
 export const runtime = "nodejs";
 
-
-import { Newspaper } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -34,10 +32,10 @@ export default function Header() {
           </div>
           <div>
             <h1 className="text-3xl font-bold text-blue-800 tracking-wider">
-              Sarkari Result 27
+              Sarkari Result
             </h1>
-            <p className="text-sm text-gray-500">
-              Your Gateway to Government Jobs & Results
+            <p className="text-sm text-gray-600">
+              sarkariresult27.com
             </p>
           </div>
         </Link>
