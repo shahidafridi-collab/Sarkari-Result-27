@@ -321,97 +321,7 @@ export default async function JobDetail({ params }) {
                   )}
                 </div>
               )}
-
-              {/* Cutoff Trends Section */}
-              {job.cutoffTrends && job.cutoffTrends.yearlyData && (
-                <div className="bg-white rounded-xl shadow-lg border border-gray-200/80 p-6 md:p-8">
-                  <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                    <TrendingUp className="h-6 w-6 mr-3 text-blue-600" />
-                    Previous Year Cutoff Trends
-                  </h2>
-                  <div className="overflow-x-auto">
-                    <table className="w-full text-left border-collapse">
-                      <thead className="bg-gray-100">
-                        <tr>
-                          <th className="p-3 font-semibold text-gray-700 border-b">Year</th>
-                          <th className="p-3 font-semibold text-gray-700 border-b">General Category</th>
-                          <th className="p-3 font-semibold text-gray-700 border-b">OBC Category</th>
-                          <th className="p-3 font-semibold text-gray-700 border-b">SC/ST Category</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {job.cutoffTrends.yearlyData.map((data, index) => (
-                          <tr key={index} className="border-b hover:bg-gray-50 last:border-0">
-                            <td className="p-3 text-gray-800 font-semibold">{data.year || 'N/A'}</td>
-                            <td className="p-3 text-gray-800">{data.general || 'N/A'}</td>
-                            <td className="p-3 text-gray-800">{data.obc || 'N/A'}</td>
-                            <td className="p-3 text-gray-800">{data.scst || 'N/A'}</td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-                  {job.cutoffTrends.note && (
-                    <div className="mt-4 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg">
-                      <p className="text-sm text-gray-700">{job.cutoffTrends.note}</p>
-                    </div>
-                  )}
-                </div>
-              )}
-
-              {/* Job Syllabus Section */}
-              {job.jobSyllabus && job.jobSyllabus.topics && (
-                <div className="bg-white rounded-xl shadow-lg border border-gray-200/80 p-6 md:p-8">
-                  <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                    <BookOpen className="h-6 w-6 mr-3 text-blue-600" />
-                    Complete Syllabus
-                  </h2>
-                  <div className="space-y-6">
-                    {syllabusItems.map((item, index) => (
-                      <div key={index} className="border-l-4 border-blue-400 pl-4">
-                        <h3 className="text-xl font-bold text-gray-800 mb-2">{item.topic}</h3>
-                        <p className="text-gray-700 mb-3">{item.subtopics}</p>
-                        {job.jobSyllabus.topics[index]?.weightage && (
-                          <span className="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded-full">
-                            Weightage: {job.jobSyllabus.topics[index].weightage}
-                          </span>
-                        )}
-                      </div>
-                    ))}
-                  </div>
-                  {job.jobSyllabus.importantNotes && (
-                    <div className="mt-6 p-4 bg-red-50 border-l-4 border-red-400 rounded-r-lg">
-                      <h4 className="font-bold text-gray-800 mb-2">Important Notes:</h4>
-                      <p className="text-gray-700">{job.jobSyllabus.importantNotes}</p>
-                    </div>
-                  )}
-                </div>
-              )}
-
-              {/* FAQ Section */}
-              {job.faq && faqItems.length > 0 && (
-                <div className="bg-white rounded-xl shadow-lg border border-gray-200/80 p-6 md:p-8">
-                  <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                    <HelpCircle className="h-6 w-6 mr-3 text-blue-600" />
-                    Frequently Asked Questions (FAQs)
-                  </h2>
-                  <div className="space-y-6">
-                    {faqItems.map((item, index) => (
-                      <div key={index} className="border-b last:border-b-0 pb-4 last:pb-0">
-                        <h3 className="text-lg font-semibold text-gray-800 mb-2 flex items-center">
-                          <span className="bg-blue-100 text-blue-800 rounded-full h-6 w-6 flex items-center justify-center text-sm mr-3">
-                            Q
-                          </span>
-                          {item.question}
-                        </h3>
-                        <p className="text-gray-700 ml-9  border-l-2 border-blue-300 pl-4">
-                          {item.answer}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
+             
 
               <div className="col-span-1 top-8 space-y-8 lg:hidden">
                 {/* Important Dates */}
@@ -596,6 +506,73 @@ export default async function JobDetail({ params }) {
                 </div>
               )}
 
+              {/* Cutoff Trends Section */}
+              {job.cutoffTrends && job.cutoffTrends.yearlyData && (
+                <div className="bg-white rounded-xl shadow-lg border border-gray-200/80 p-6 md:p-8">
+                  <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                    <TrendingUp className="h-6 w-6 mr-3 text-blue-600" />
+                    Previous Year Cutoff Trends
+                  </h2>
+                  <div className="overflow-x-auto">
+                    <table className="w-full text-left border-collapse">
+                      <thead className="bg-gray-100">
+                        <tr>
+                          <th className="p-3 font-semibold text-gray-700 border-b">Year</th>
+                          <th className="p-3 font-semibold text-gray-700 border-b">General Category</th>
+                          <th className="p-3 font-semibold text-gray-700 border-b">OBC Category</th>
+                          <th className="p-3 font-semibold text-gray-700 border-b">SC/ST Category</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {job.cutoffTrends.yearlyData.map((data, index) => (
+                          <tr key={index} className="border-b hover:bg-gray-50 last:border-0">
+                            <td className="p-3 text-gray-800 font-semibold">{data.year || 'N/A'}</td>
+                            <td className="p-3 text-gray-800">{data.general || 'N/A'}</td>
+                            <td className="p-3 text-gray-800">{data.obc || 'N/A'}</td>
+                            <td className="p-3 text-gray-800">{data.scst || 'N/A'}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                  {job.cutoffTrends.note && (
+                    <div className="mt-4 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg">
+                      <p className="text-sm text-gray-700">{job.cutoffTrends.note}</p>
+                    </div>
+                  )}
+                </div>
+              )}
+              
+              {/* Job Syllabus Section */}
+              {job.jobSyllabus && job.jobSyllabus.topics && (
+                <div className="bg-white rounded-xl shadow-lg border border-gray-200/80 p-6 md:p-8">
+                  <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                    <BookOpen className="h-6 w-6 mr-3 text-blue-600" />
+                    Complete Syllabus
+                  </h2>
+                  <div className="space-y-6">
+                    {syllabusItems.map((item, index) => (
+                      <div key={index} className="border-l-4 border-blue-400 pl-4">
+                        <h3 className="text-xl font-bold text-gray-800 mb-2">{item.topic}</h3>
+                        <p className="text-gray-700 mb-3">{item.subtopics}</p>
+                        {job.jobSyllabus.topics[index]?.weightage && (
+                          <span className="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded-full">
+                            Weightage: {job.jobSyllabus.topics[index].weightage}
+                          </span>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                  {job.jobSyllabus.importantNotes && (
+                    <div className="mt-6 p-4 bg-red-50 border-l-4 border-red-400 rounded-r-lg">
+                      <h4 className="font-bold text-gray-800 mb-2">Important Notes:</h4>
+                      <p className="text-gray-700">{job.jobSyllabus.importantNotes}</p>
+                    </div>
+                  )}
+                </div>
+              )}
+
+
               {/* Additional information */}
               {job.additionalInfo?.applicationSteps?.length > 0 && (
                 <div className="bg-white rounded-xl shadow-lg border border-gray-200/80 p-6">
@@ -610,6 +587,32 @@ export default async function JobDetail({ params }) {
                   </ol>
                 </div>
               )}
+
+               {/* FAQ Section */}
+              {job.faq && faqItems.length > 0 && (
+                <div className="bg-white rounded-xl shadow-lg border border-gray-200/80 p-6 md:p-8">
+                  <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                    <HelpCircle className="h-6 w-6 mr-3 text-blue-600" />
+                    Frequently Asked Questions (FAQs)
+                  </h2>
+                  <div className="space-y-6">
+                    {faqItems.map((item, index) => (
+                      <div key={index} className="border-b last:border-b-0 pb-4 last:pb-0">
+                        <h3 className="text-lg font-semibold text-gray-800 mb-2 flex items-center">
+                          <span className="bg-blue-100 text-blue-800 rounded-full h-6 w-6 flex items-center justify-center text-sm mr-3">
+                            Q
+                          </span>
+                          {item.question}
+                        </h3>
+                        <p className="text-gray-700 ml-9  border-l-2 border-blue-300 pl-4">
+                          {item.answer}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
             </div>
 
             {/* Right Column (Sticky Sidebar) */}
