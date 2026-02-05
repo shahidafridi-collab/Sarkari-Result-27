@@ -8,7 +8,7 @@ import { Calendar, FileText, CreditCard, Key, BookOpen, GraduationCap, TrendingU
 
 
 export const metadata = {
-  title: "Sarkari Result: Latest Govt Jobs, Results, Admit Card",
+  title: "Sarkari Result - Latest Govt Jobs, Results, Admit Card",
   description:
     "Sarkari Result – Get latest govt jobs, results, admit card, syllabus, answer key and exam notifications. Trusted portal for all Sarkari updates.",
   keywords: [

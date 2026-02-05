@@ -19,9 +19,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Sarkari Result 2026: Latest Govt Jobs, Results, Admit Card, Answer Key",
+  title: "Sarkari Result: Latest Govt Jobs, Results, Admit Card, Answer Key",
   description:
-    "Check Sarkari Result 2026 for latest government jobs, exam results, admit card, syllabus, answer key and online forms. Fast & accurate updates daily.",
+    "Check Sarkari Result for latest government jobs, exam results, admit card, syllabus, answer key and online forms. Fast & accurate updates daily.",
   keywords: [
     "sarkari result 2026",
     "sarkari result",
