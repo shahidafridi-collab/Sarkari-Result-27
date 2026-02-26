@@ -26,9 +26,6 @@ async function getJobsData(id) {
 
   const jobs = await res.json();
 
-  // FIX: Compare types correctly (URL param is a string, data ID is a number)
-  // We use == for loose comparison or convert one type to another.
-  // Using String() is often safer than parseInt() if IDs might be non-numeric.
   const specificJob = jobs.find(j => String(j.id) === id);
   return specificJob;
 }
@@ -38,6 +35,7 @@ async function getJobsData(id) {
 export default async function JobDetail({ params }) {
   // 1. FIX: Get 'id' directly from params. It's an object, not a Promise.
   const { id } = await params;
+  console.log(params); // This will show the params object, which should contain the 'id' property.
 
   // 2. FIX: Pass the 'id' variable, not the entire 'params' object.
   let job;
