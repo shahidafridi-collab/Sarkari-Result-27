@@ -9,7 +9,9 @@ import { FileText, Eye } from 'lucide-react';
 
 
 async function getJobsData() {
-    const res = await fetch('https://gist.githubusercontent.com/shahidafridi-collab/3d4fa23aadd9be02be79a58e46009126/raw/gistfile1.txt');
+    const res = await fetch('https://gist.githubusercontent.com/shahidafridi-collab/3d4fa23aadd9be02be79a58e46009126/raw/gistfile1.txt',
+        {cache: 'no-store'}
+    );
 
     if (!res.ok) {
         throw new Error('failed to Load');
