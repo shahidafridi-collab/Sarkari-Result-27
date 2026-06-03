@@ -22,6 +22,7 @@ export const metadata = {
   title: "Sarkari Result: Latest Govt Jobs, Results, Admit Card, Answer Key",
   description:
     "Check Sarkari Result for latest government jobs, exam results, admit card, syllabus, answer key and online forms. Fast & accurate updates daily.",
+  applicationName: "Sarkari Result",
   keywords: [
     "sarkari result 2026",
     "sarkari result",
@@ -87,6 +88,21 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <Footer />
+
+        <Script
+          id="website-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "Sarkari Result",
+              alternateName: "Sarkari Result 27",
+              url: "https://sarkariresult27.com",
+            }),
+          }}
+        />
+
       </body>
     </html>
   );
